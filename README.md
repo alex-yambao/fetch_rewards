@@ -71,9 +71,9 @@ Default host:
 
 ### Use/Testing 
 To interact with the API for testing purposes you must have an API testing service such as cURL or Postman to hit API endpoints. 
-[Heroku](https://fetchrewards-ay.herokuapp.com/api) link: https://fetchrewards-ay.herokuapp.com/api
-
- ***Body Requests must be formatted as JSON*** 
+[Heroku](https://fetchrewards-ay.herokuapp.com/api) link: https://fetchrewards-ay.herokuapp.com/api/
+ 
+Check [Health](https://fetchrewards-ay.herokuapp.com/api/health)
   
   Postman
   
@@ -88,16 +88,19 @@ To interact with the API for testing purposes you must have an API testing servi
   -[Request Formatting Doc](https://docs.oracle.com/en/cloud/saas/marketing/eloqua-develop/Developers/GettingStarted/APIRequests/curl-formats.htm)
 
 ***API ENDPOINTS***
-- **POST api/rewards/add**
+ 
+  ***Body Requests must be formatted as JSON***  
+  
+- **POST rewards/add**
   
   Template:
   
   
-- **PATCH api/rewards/spend**
+- **PATCH rewards/spend**
   
   Template:
   
-- **GET api/rewards/balance**
+- **GET rewards/balance**
   
   Template:
 
