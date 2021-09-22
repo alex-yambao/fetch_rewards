@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
-1. Project Requirements
+1. [Project Requirements](https://github.com/alex-yambao/fetch_rewards#project-requirements)
 
-2. Installation
+2. [Installation](https://github.com/alex-yambao/fetch_rewards#installation)
 
-3. Testing / Usage
+3. [Testing / Usage](https://github.com/alex-yambao/fetch_rewards#testing-/-usage)
 
 
 ### Project Requirements
