@@ -6,7 +6,7 @@
 
 2. [Installation](https://github.com/alex-yambao/fetch_rewards#installation)
 
-3. [Testing / Usage](https://github.com/alex-yambao/fetch_rewards#testing-/-usage)
+3. [Use/Testing](https://github.com/alex-yambao/fetch_rewards#usetesting)
 
 
 ### Project Requirements
@@ -49,9 +49,9 @@ A subsequent call to the points balance route, after the spend, should returns t
 ### Installation
 **Required prior to use**
 
-Runtime: Node.js https://nodejs.org/en/download/ 
+Runtime: [Node.js](https://nodejs.org/en/download/) 
 
-Github Cloning Docs: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+[Github Cloning Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 - Git clone https://github.com/alex-yambao/fetch_rewards.git
 
@@ -70,7 +70,7 @@ Run jest API test suite
 
 ### Use/Testing 
 To interact with the API for testing purposes you must have an API testing service such as curl or Postman.  
-Heroku link: https://fetchrewards-ay.herokuapp.com/api/health
+[Heroku](https://fetchrewards-ay.herokuapp.com/api) link: https://fetchrewards-ay.herokuapp.com/api
 
 1) Postman
 
