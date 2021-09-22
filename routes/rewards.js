@@ -33,7 +33,6 @@ rewardsRouter.patch("/spend", async (req, res, next) => {
         message: "Invalid field found in request body",
       };
     }
-
     const transaction = await spendPoints(points);
     res.status(200).send(transaction);
   } catch (error) {
