@@ -1,13 +1,18 @@
 # Fetch Rewards Backend Coding Exercise
 
 ## Table of Contents
+1. [About]()
 
-1. [Project Requirements](https://github.com/alex-yambao/fetch_rewards#project-requirements)
+2. [Project Requirements](https://github.com/alex-yambao/fetch_rewards#project-requirements)
 
-2. [Installation](https://github.com/alex-yambao/fetch_rewards#installation)
+3. [Installation](https://github.com/alex-yambao/fetch_rewards#installation)
 
-3. [Use/Testing](https://github.com/alex-yambao/fetch_rewards#usetesting)
+4. [Use/Testing](https://github.com/alex-yambao/fetch_rewards#usetesting)
 
+5. [API Endpoints]()
+
+### About
+While this was a take home challenge, I was stoked to have the opportunity to create a project up to Fetch Rewards standards! As a developer fresh out of a coding bootcamp(literally three days ago), I was thrilled to be able to put the skills I've learned to the test - and this was a worthy one. Fetch Rewards requires its Backend interns to build highly performant backend services that are flexible enough to integrate into data stores, message queues, mobile and web platforms, and other systems. After thinking about those standards, I created a web service utilizing the Node.JS and several of its packages, notably Express, Axios, and Jest.  
 
 ### Project Requirements
 Write a web service that accepts HTTP request and returns responses. 
@@ -74,7 +79,9 @@ To interact with the API for testing purposes you must have an API testing servi
 [Heroku](https://fetchrewards-ay.herokuapp.com/api) link: https://fetchrewards-ay.herokuapp.com/api/
  
 Check [Health](https://fetchrewards-ay.herokuapp.com/api/health)
-  
+
+ ![Alt text](https://github.com/alex-yambao/fetch_rewards/blob/master/assets/HEALTH.png?raw=true "Health Displayed in Browser")
+ 
   Postman
   
   -[Installation Docs](https://learning.postman.com/docs/getting-started/installation-and-updates/)
@@ -87,20 +94,28 @@ Check [Health](https://fetchrewards-ay.herokuapp.com/api/health)
   
   -[Request Formatting Doc](https://docs.oracle.com/en/cloud/saas/marketing/eloqua-develop/Developers/GettingStarted/APIRequests/curl-formats.htm)
 
-***API ENDPOINTS***
+### API ENDPOINTS
  
-  ***Body Requests must be formatted as JSON***  
+ **Headers**
+ ![Alt text](https://github.com/alex-yambao/fetch_rewards/blob/master/assets/HEADERS.png?raw=true "Header Settings in Postman (Default)") 
+ 
+  ***Body Requests must be formatted as JSON Data***  
   
 - **POST rewards/add**
-  
-  Template:
+ 
+  ![Alt text](https://github.com/alex-yambao/fetch_rewards/blob/master/assets/POST.png?raw=true "Post/add request in Postman") 
   
   
 - **PATCH rewards/spend**
-  
-  Template:
+ 
+  ![Alt text](https://github.com/alex-yambao/fetch_rewards/blob/master/assets/PATCH.png?raw=true "Patch/spend request in Postman)") 
+
   
 - **GET rewards/balance**
-  
+ 
+  ![Alt text](https://github.com/alex-yambao/fetch_rewards/blob/master/assets/GET.png?raw=true "Get/balance request in Postman") 
+ 
+  ![Alt text](https://github.com/alex-yambao/fetch_rewards/blob/master/assets/BALANCE.png?raw=true "Balance route displayed in Browser view") 
+ 
   Template:
 
