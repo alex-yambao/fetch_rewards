@@ -66,21 +66,38 @@ Start server
 Run jest API test suite 
 - npm run test
 
-
+Default host: 
+- [localhost:3000](localhost:3000)
 
 ### Use/Testing 
-To interact with the API for testing purposes you must have an API testing service such as curl or Postman.  
+To interact with the API for testing purposes you must have an API testing service such as cURL or Postman to hit API endpoints. 
 [Heroku](https://fetchrewards-ay.herokuapp.com/api) link: https://fetchrewards-ay.herokuapp.com/api
 
-1) Postman
+ ***Body Requests must be formatted as JSON*** 
+  
+  Postman
+  
+  -[Installation Docs](https://learning.postman.com/docs/getting-started/installation-and-updates/)
+  
+  -[Request Formatting Docs](https://learning.postman.com/docs/sending-requests/requests/)
+  
+  Curl
+  
+  -[Installation Docs](https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux)
+  
+  -[Request Formatting Doc](https://docs.oracle.com/en/cloud/saas/marketing/eloqua-develop/Developers/GettingStarted/APIRequests/curl-formats.htm)
 
+***API ENDPOINTS***
+- **POST api/rewards/add**
+  
+  Template:
+  
+  
+- **PATCH api/rewards/spend**
+  
+  Template:
+  
+- **GET api/rewards/balance**
+  
+  Template:
 
-2) Curl
-
-
-
-### 
-
-
-
-###
