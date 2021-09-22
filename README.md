@@ -1,7 +1,7 @@
 # Fetch Rewards Backend Coding Exercise
 
 ## Table of Contents
-1. [About]()
+1. [About](https://github.com/alex-yambao/fetch_rewards#about)
 
 2. [Project Requirements](https://github.com/alex-yambao/fetch_rewards#project-requirements)
 
@@ -9,10 +9,12 @@
 
 4. [Use/Testing](https://github.com/alex-yambao/fetch_rewards#usetesting)
 
-5. [API Endpoints]()
+5. [API Endpoints](https://github.com/alex-yambao/fetch_rewards#api-endpoints)
 
 ### About
-While this was a take home challenge, I was stoked to have the opportunity to create a project up to Fetch Rewards standards! As a developer fresh out of a coding bootcamp(literally three days ago), I was thrilled to be able to put the skills I've learned to the test - and this was a worthy one. Fetch Rewards requires its Backend interns to build highly performant backend services that are flexible enough to integrate into data stores, message queues, mobile and web platforms, and other systems. After thinking about those standards, I created a web service utilizing the Node.JS and several of its packages, notably Express, Axios, and Jest.  
+While this was a take home challenge, I was stoked to have the opportunity to create a project up to Fetch Rewards' standards! As a developer fresh out of a coding bootcamp (literally three days ago), I was thrilled to be able to put the skills I've learned to the test - and this was a worthy one. Fetch Rewards requires its Backend interns to build highly performant backend services that are flexible enough to integrate into data stores, message queues, mobile and web platforms, and other systems. After thinking about those standards, I created a web service utilizing Node.JS and several of its packages - most notably Express, Axios, and Jest.
+
+The project meets all of the specified project requirements. Additionally, there is a small test suite that I built to ensure that I met all specifications. 
 
 ### Project Requirements
 Write a web service that accepts HTTP request and returns responses. 
@@ -70,6 +72,7 @@ Start server
 
 Run jest API test suite 
 - npm run test
+![Alt text](https://github.com/alex-yambao/fetch_rewards/blob/master/assets/TESTS.png?raw=true "Test suites") 
 
 Default host: 
 - [localhost:3000](localhost:3000)
@@ -117,5 +120,3 @@ Check [Health](https://fetchrewards-ay.herokuapp.com/api/health)
  
   ![Alt text](https://github.com/alex-yambao/fetch_rewards/blob/master/assets/BALANCE.png?raw=true "Balance route displayed in Browser view") 
  
-  Template:
-
