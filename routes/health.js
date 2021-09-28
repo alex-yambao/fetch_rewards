@@ -3,7 +3,7 @@ const healthRouter = express.Router();
 
 healthRouter.get("/", async (req, res, next) => {
   try {
-    res.send({
+    res.status(201).send({
       Name: "Health Status",
       message: "Server is up and receiving requests",
     });

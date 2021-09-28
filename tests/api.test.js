@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config();
 const axios = require("axios");
 const PORT = 3000 || process.env.PORT;
 const SERVER_ADDRESS = `http://localhost:${PORT}` || process.env.SERVER_ADDRESS;

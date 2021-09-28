@@ -13,7 +13,8 @@ server.use("/api", apiRouter);
 
 server.use((error, res) => {
   console.error("SERVER ERROR: ", error);
-  if (res.statusCode < 400) res.status(500);
+  if (res.statusCode < 400)  
+  res.status(500)
   res.send({
     name: error.name,
     message: error.message,
