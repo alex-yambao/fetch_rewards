@@ -54,7 +54,7 @@ rewardsRouter.patch("/spend", async (req, res, next) => {
 rewardsRouter.get("/balance", async (req, res, next) => {
   try {
     const balances = await getBalances();
-    res.status(201).send(balances);
+    res.status(200).send(balances);
   } catch (error) {
     next(error);
   }
