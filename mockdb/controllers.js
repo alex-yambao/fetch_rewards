@@ -18,7 +18,7 @@ async function spendPoints(spendBalance) {
   const totals = totalPoints(mockDB); //<--- totalPoints located in utils.js
   const sortedArr = dateTimeSort(mockDB); //<---dateTimeSort located in utils.js
   if (totals < spendBalance) {
-    return null;
+    return { incomplete: true, balance: totals };
   }
   const transactionList = transactPoints(sortedArr, spendBalance); //<--- transactPoints located in utils.js
   return transactionList;

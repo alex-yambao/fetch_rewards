@@ -13,8 +13,8 @@ describe("API", () => {
 
 describe("rewards/add", () => {
   let reward;
+  let newReward = { payer: "NESTLE", points: 500 };
   beforeAll(async () => {
-    let newReward = { payer: "NESTLE", points: 500 };
     const req = await axios.post(`${API_URL}/api/rewards/add`, newReward);
     reward = req.data;
   });
@@ -34,16 +34,27 @@ describe("rewards/add", () => {
     } catch (error) {
       errResp = error.response;
     }
-    expect(req).toBeFalsy();
-    expect(errResp.data).toBeTruthy();
+    expect(errResp.status).toBe(400);
+  });
+  it("throws error if there are missing fields", async () => {
+    let errResp;
+    let badReq = {};
+    let req;
+    try {
+      req = await axios.post(`${API_URL}/api/rewards/add`, badReq);
+    } catch (error) {
+      errResp = error.response;
+    }
+    expect(errResp.status).toBe(400);
   });
 });
 
 describe("rewards/spend", () => {
   let transaction;
+  let spendRequest = { points: 1050 };
+  let req;
   beforeAll(async () => {
-    let spendRequest = { points: 1050 };
-    const req = await axios.patch(`${API_URL}/api/rewards/spend`, spendRequest);
+    req = await axios.patch(`${API_URL}/api/rewards/spend`, spendRequest);
     transaction = req.data;
   });
   it("returns an object", async () => {
@@ -62,8 +73,7 @@ describe("rewards/spend", () => {
     } catch (error) {
       errResp = error.response;
     }
-    expect(req).toBeFalsy();
-    expect(errResp.data).toBeTruthy();
+    expect(errResp.status).toBe(400);
   });
   it("throws an error for invalid fields", async () => {
     let errResp;
@@ -74,8 +84,7 @@ describe("rewards/spend", () => {
     } catch (error) {
       errResp = error.response;
     }
-    expect(req).toBeFalsy();
-    expect(errResp.data).toBeTruthy();
+    expect(errResp.status).toBe(400);
   });
 });
 
